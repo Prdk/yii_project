@@ -70,11 +70,6 @@ AppAsset::register($this);
     
     
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <footer class="footer" >
     <div class="container" >
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>

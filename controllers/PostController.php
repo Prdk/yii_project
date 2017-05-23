@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace app\controllers;
 
 /**
@@ -7,16 +9,15 @@ namespace app\controllers;
  *
  * @author лёха
  */
-class PostController extends AppController {
-
-    public function actionIndex($name = 'гость') {
+class PostController extends AppController{
+    
+    public function actionIndex($name = 'гость'){
         $hello = 'Привет мир';
-        $hi = 'Привет';
-        return $this->render('index', compact('hello', 'hi', 'name'));
+        $hi = 'привет';
+        return $this->render('index', compact('hello','hi','name'));
     }
     
-    public function actionTest(){
-        return $this->render('test');
+    public function actionTest($name = 'гость'){
+        return $this->render('test',compact('name'));
     }
-
 }
