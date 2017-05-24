@@ -7,7 +7,9 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     
-    'defaultRoute' => 'post/index',
+    //!!!
+    //'defaultRoute' => 'my/index',
+    
     
     'components' => [
         'request' => [
@@ -48,8 +50,9 @@ $config = [
             'rules' => [
                 
                 //'test' => 'post/test'
+                //!!!!!
+                //'<action>' => 'my/<action>',
                 
-                '<action>' => 'post/<action>',
                 
             ],
         ],
@@ -65,6 +68,11 @@ if (YII_ENV_DEV) {
             // uncomment the following to add your IP if you are not connecting from localhost.
             //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+    
+    //включение панели отладчика
+    //(Здесь надо добавить строку, в которой будет задан список IP-адресов, на которых будет работать дебаггер) 
+    //(по завершении проэкта отключить)
+    $config['modules']['debug']['allowedIPs'] = ['176.119.232.215'];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
@@ -72,6 +80,7 @@ if (YII_ENV_DEV) {
             // uncomment the following to add your IP if you are not connecting from localhost.
             //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+   
 }
 
 return $config;
