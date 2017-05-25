@@ -7,6 +7,12 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     
+    //глобальное подключение шаблона
+    //'layout' => 'myLayout',
+    
+    
+    
+    
     //!!!
     //'defaultRoute' => 'my/index',
     

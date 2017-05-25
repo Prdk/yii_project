@@ -1,5 +1,5 @@
 <code><?= __FILE__ ?></code>
-<h1 align="center">Action Index</h1>
+<h1 align="center">Action Index(myController)</h1>
 
 <br>
 <h3><?= $hello ?></h3>

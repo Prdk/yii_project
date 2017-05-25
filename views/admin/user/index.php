@@ -1,6 +1,5 @@
 
 
-
 <code><?= __FILE__ ?></code>
 
 <h1 align="center">Admin zone</h1>
