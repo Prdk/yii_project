@@ -15,6 +15,7 @@ foreach ($name as $k => $v) {
 
 <br>
 <br>
+<?php echo "hhhhhhhhhhhhhhhh" ?>
 <br>
 
 <p>Имя пользователя: <?= $id ?></p>
