@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\controllers\MyAppController;
+//use app\controllers\MyAppController;
 
 /**
  * Description of myShopController
@@ -14,12 +14,13 @@ class MyShopController extends MyAppController {
     //public $layout = 'shopLayout';
 
     public function actionIndex() {
-        //$mySite = 'мой магазин';
-        return $mySite = "мой магазин";
-        //return $this->render('index',compact('mySite'));
+        $mySite = 'мой магазин';
+        //return $mySite = "мой магазин";
+        return $this->render('index');
     }
 
     public function actionProduct() {
+        //return 'product';
         //return $this->render ('product');
     }
 
