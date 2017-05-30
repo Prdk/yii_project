@@ -1,7 +1,7 @@
 <?php
 
-
 namespace app\controllers;
+
 use yii;
 
 /**
@@ -9,17 +9,18 @@ use yii;
  *
  * @author лёха
  */
-class PostController extends AppController{
-    
+class PostController extends AppController {
+
     public $layout = 'myLayout';
-    
-    public function actionIndex(){
-                
+
+    public function actionIndex() {
+
         return $this->render('index');
     }
-    
-    public function actionShow(){
+
+    public function actionShow() {
         //$this->layout = myLayout;
         return $this->render('show');
     }
+
 }
