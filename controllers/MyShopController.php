@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-//use app\controllers\MyAppController;
-use yii\controllers\MyAppController;
+use app\controllers\MyAppController;
+
 
 /**
  * Description of myShopController
