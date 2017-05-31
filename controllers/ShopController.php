@@ -10,9 +10,9 @@ use app\controllers\MyAppController;
  *
  * @author лёха
  */
-class MyShopController extends MyAppController {
+class ShopController extends MyAppController {
 
-    //public $layout = 'shopLayout';
+    public $layout = 'shopLayout';
 
     public function actionIndex() {        
         //return $mySite = "мой магазин";

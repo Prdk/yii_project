@@ -15,7 +15,7 @@ $config = [
     
     //!!!
     //'defaultRoute' => 'my/index',
-    //'defaultRoute' => 'my/index',
+    'defaultRoute' => 'my/index',
     
     
     'components' => [
