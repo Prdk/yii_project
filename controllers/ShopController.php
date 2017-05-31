@@ -20,9 +20,9 @@ class ShopController extends MyAppController {
         return $this->render('index',compact('mySite'));
     }
 
-    public function actionProduct() {
+    public function actionProduct($name = 'гость') {
         //return 'product';
-        //return $this->render ('product');
+        return $this->render ('product',  compact('name'));
     } 
 
 }
