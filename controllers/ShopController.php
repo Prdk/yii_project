@@ -15,14 +15,16 @@ class ShopController extends MyAppController {
     public $layout = 'shopLayout';
 
     public function actionIndex() {        
-        //return $mySite = "мой магазин";
+        
         $mySite = 'мой магазин';
         return $this->render('index',compact('mySite'));
     }
 
-    public function actionProduct($name = 'гость') {
-        //return 'product';
-        return $this->render ('product',  compact('name'));
+    public function actionProduct() {
+        
+        return $this->render ('product',  compact(''));
     } 
+    
+    
 
 }
