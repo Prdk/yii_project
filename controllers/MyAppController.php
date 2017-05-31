@@ -12,5 +12,5 @@ use yii\web\Controller;
  */
 class MyAppController extends Controller {
     //put your code here
-}
+} 
 

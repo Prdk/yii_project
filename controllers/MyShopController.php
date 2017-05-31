@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 //use app\controllers\MyAppController;
+use yii\controllers\MyAppController;
 
 /**
  * Description of myShopController
@@ -13,15 +14,15 @@ class MyShopController extends MyAppController {
 
     //public $layout = 'shopLayout';
 
-    public function actionIndex() {
-        $mySite = 'мой магазин';
+    public function actionIndex() {        
         //return $mySite = "мой магазин";
-        return $this->render('index');
+        $mySite = 'мой магазин';
+        return $this->render('index',compact('mySite'));
     }
 
     public function actionProduct() {
         //return 'product';
         //return $this->render ('product');
-    }
+    } 
 
 }
