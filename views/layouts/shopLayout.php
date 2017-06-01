@@ -17,22 +17,27 @@ ShopAsset::register($this);
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Магазин</title>
-        
+
         <?php $this->head() ?>
     </head>
     <body>
         <?php $this->beginBody() ?>
 
+
+
         <div class="wrap">
             <div class="container">
+
+                <div class="pull-right">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="active"><?= Html::a('Главная', '/site/') ?></li>
+                        <li role="presentation"><?= Html::a('Магазин', ['shop/index']) ?></li>
+                        <li role="presentation"><?= Html::a('Товар', ['shop/product']) ?></li>
+                    </ul>
+                </div>
                 
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><?= Html::a('Главная', '/site/')?></li>
-                    <li role="presentation"><?= Html::a('Магазин', ['shop/index']) ?></li>
-                    <li role="presentation"><?= Html::a('Товар', ['shop/product'])?></li>
-                </ul>
 
                 <?= $content ?>
             </div>
@@ -48,7 +53,7 @@ ShopAsset::register($this);
             <div class="container" >
                 <p class="pull-left">&copy; My Shop ( Магазин не настаящий )  <?= date('Y') ?></p>
 
-                
+
             </div>
         </footer>
 
