@@ -9,6 +9,7 @@ use yii\widgets\Breadcrumbs;
 //use app\assets\AppAsset;
 use app\assets\ShopAsset;
 
+//AppAsset::register($this);
 ShopAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -18,7 +19,7 @@ ShopAsset::register($this);
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Магазин</title>
+        <title><?= Html::encode($this->title) ?></title>
 
         <?php $this->head() ?>
     </head>
@@ -29,6 +30,9 @@ ShopAsset::register($this);
 
         <div class="wrap">
             <div class="container">
+                <div class="pull-left">
+                    <p><h3>MMM</h3></p>
+                </div>
 
                 <div class="pull-right">
                     <ul class="nav nav-pills">
@@ -37,11 +41,16 @@ ShopAsset::register($this);
                         <li role="presentation"><?= Html::a('Товар', ['shop/product']) ?></li>
                     </ul>
                 </div>
-                
-
-                <?= $content ?>
+                   
             </div>
+            <?php if(isset($this->blocks['block1'])){
+                echo $this->blocks['bloc1'];
+            } ?>
+            
+            <?= $content ?>
         </div>
+        
+        
 
 
 
