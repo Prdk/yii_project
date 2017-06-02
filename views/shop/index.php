@@ -1,8 +1,8 @@
 <?php $this->title = 'Магазин'; ?>
 
-<?php $this->beginBlock('block1'); ?>
+<?php  $this->beginBlock('block1'); ?>
 <h1>Заголовок</h1>
-<?php $this->endBlock(); ?>
+<?php  $this->endBlock(); ?>
 
 <h1>Магазин (index)</h1>
 

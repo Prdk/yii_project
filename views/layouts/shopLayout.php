@@ -41,16 +41,18 @@ ShopAsset::register($this);
                         <li role="presentation"><?= Html::a('Товар', ['shop/product']) ?></li>
                     </ul>
                 </div>
-                   
+
             </div>
-            <?php if(isset($this->blocks['block1'])){
-                echo $this->blocks['bloc1'];
-            } ?>
-            
-            <?= $content ?>
+            <?php
+            if (isset($this->blocks['block1'])) {
+                echo $this->blocks['block1'];
+            }
+            ?>
+
+<?= $content ?>
         </div>
-        
-        
+
+
 
 
 
@@ -66,7 +68,7 @@ ShopAsset::register($this);
             </div>
         </footer>
 
-        <?php $this->endBody() ?>
+<?php $this->endBody() ?>
     </body>
 </html>
 <?php $this->endPage() ?>
