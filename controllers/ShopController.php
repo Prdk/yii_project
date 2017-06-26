@@ -17,7 +17,9 @@ class ShopController extends MainShopController {
     public function actionIndex() {        
         
         $mySite = 'мой магазин';
-        return $this->render('index',compact('mySite'));
+        $mySite1 = 'МОЙ';
+        return $this->render('index',compact('mySite','mySite1'));
+        
     }
 
     public function actionProduct() {
