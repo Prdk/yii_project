@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\controllers\MyAppController;
+use app\controllers\MainShopController;
 
 
 /**
@@ -10,7 +10,7 @@ use app\controllers\MyAppController;
  *
  * @author лёха
  */
-class ShopController extends MyAppController {
+class ShopController extends MainShopController {
 
     public $layout = 'shopLayout';
 

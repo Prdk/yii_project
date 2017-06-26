@@ -10,7 +10,7 @@ use yii\web\Controller;
  *
  * @author лёха
  */
-class MyAppController extends Controller {
+class MainShopController extends Controller {
     //put your code here
 } 
 
