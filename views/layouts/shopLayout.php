@@ -49,7 +49,7 @@ ShopAsset::register($this);
             }
             ?>
 
-<?= $content ?>
+            <?= $content ?>
         </div>
 
 
@@ -68,7 +68,7 @@ ShopAsset::register($this);
             </div>
         </footer>
 
-<?php $this->endBody() ?>
+        <?php $this->endBody() ?>
     </body>
 </html>
 <?php $this->endPage() ?>
