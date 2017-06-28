@@ -43,11 +43,13 @@ ShopAsset::register($this);
                 </div>
 
             </div>
+            <div class="block1">
             <?php
             if (isset($this->blocks['block1'])) {
                 echo $this->blocks['block1'];
             }
             ?>
+            </div>
 
             <?= $content ?>
         </div>
