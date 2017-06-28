@@ -1,4 +1,4 @@
-<?php $this->title = 'Магазин'; ?>
+<?php // $this->title = 'Магазин'; ?>
 
 <?php  $this->beginBlock('block1'); ?>
 <h1>Заголовок</h1>
